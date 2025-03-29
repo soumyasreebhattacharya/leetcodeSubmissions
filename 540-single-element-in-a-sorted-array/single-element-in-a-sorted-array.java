@@ -18,7 +18,7 @@ class Solution {
 
         while(start <= end){
 
-            mid = (start + end)/2;
+            mid = start + (end - start)/2;
 
             if(nums[mid] != nums[mid-1] && nums[mid] != nums[mid+1]){
                 return nums[mid];
